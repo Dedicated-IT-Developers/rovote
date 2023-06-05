@@ -14,7 +14,10 @@ class Dashboard extends Controller {
 	}
 
     public function org() {
-		$this->call->view('org/organization_view');
+        $this->call->model('Organization_model','organization_model');
+
+        $data['organizations'] = $this->organization_model->organizations();
+		$this->call->view('org/organization_view', $data);
 	}
 
     public function filing() {
