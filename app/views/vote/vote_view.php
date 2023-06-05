@@ -242,6 +242,11 @@
             </div>
         </div>
     </div><!-- End: Features Cards -->
+    <footer class="footer">
+        <div class="text-center p-5">
+            <h6>&copy; 2023 | Sir Red | <b> Lileth Pine & Noel Dimailig (BSIT Students AY 2022-2023) </b> | Powered by LavaLust Framework</h6>
+        </div>
+    </footer>
     <script src="<?php echo BASE_URL; ?>public/vote/assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
