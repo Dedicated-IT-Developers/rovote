@@ -11,6 +11,7 @@ class Vote extends Controller
 
     public function student($STUDID)
     {
+        $data['studid'] = $STUDID;
         $this->call->model('Candidate_model', 'candidate_model');
         $this->call->model('Student_model', 'student_model');
 
@@ -18,5 +19,10 @@ class Vote extends Controller
         $data['voter'] = $this->student_model->students($STUDID);
 
         $this->call->view('vote/vote_view', $data);
+    }
+
+    public function ballot($studid)
+    {
+        //submit vote here
     }
 }

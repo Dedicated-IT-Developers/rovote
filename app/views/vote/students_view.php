@@ -79,7 +79,7 @@
 													<td class="cell">
 														<span class="badge bg-success">Voted</span>
 													</td>
-													<td class="cell"><a class="btn-sm app-btn-secondary" href="<?php echo BASE_URL; ?>vote/student/<?php echo $student['STUDID']; ?>">Vote</a></td>
+													<td class="cell"><a class="btn-sm app-btn-secondary" target="_blank" rel="noopener noreferrer" onclick="window.open('<?php echo BASE_URL; ?>vote/student/<?php echo $student['STUDID']; ?>', 'newwindow', 'width=auto,height=auto'); return false;" href="#">Vote</a></td>
 												</tr>
 											<?php } ?>
 		
