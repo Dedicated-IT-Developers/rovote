@@ -17,42 +17,34 @@ class Candidate_model extends Model
 	}
 
     /**
-     * REFS
+     * REFERENCE LANG
      */
 
     public function select($id)
     {
-        return $this->db->table('course')
-            ->select('id, user_id, name, description, avatar, cover, privacy, code, category, language')					
+        return $this->db->table('table')
+            ->select('id, etc')					
             ->where('id', $id)
             ->get();
     }
 
     public function update($data, $id)
     {
-        return $this->db->table('course')
+        return $this->db->table('table')
                         ->where('id', $id)
                         ->update($data);
     }
 
     public function remove($id)
     {
-        return $this->db->table('course')
+        return $this->db->table('table')
             ->where('id', $id)
             ->delete();
     }
 
     public function insert($data)
     {
-        $check = $this->db->table('user_course')
-            ->select('id')					
-            ->where('user_id', $data['user_id'])
-            ->where('course_id', $data['course_id'])
-            ->get();
-
-        if(!$check){
-            return $this->db->table('user_course')->insert($data);
-        }
+        return $this->db->table('table')->insert($data);
     }
 
 }
