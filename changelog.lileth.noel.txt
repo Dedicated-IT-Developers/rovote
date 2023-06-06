@@ -1,0 +1,2 @@
+# Dropdown candidates based on position
+# candidates($position) helper on profile_helper
