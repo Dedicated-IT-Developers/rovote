@@ -87,35 +87,29 @@
                             <hr class="mb-5"><!-- Start: Contact Details -->
                             <section>
                                 <div class="container">
+
                                     <div class="row d-flex justify-content-center">
                                         <div class="col-md-6 col-lg-4 col-xl-4">
-                                            <form class="p-3 p-xl-4" method="post"><label class="form-label"><strong>Governor</strong></label><!-- Start: Success Example -->
+                                            <form class="p-3 p-xl-4" method="post">
+                                                <label class="form-label"><strong>Governor</strong></label><!-- Start: Success Example -->
                                                 <div class="mb-3"><select class="form-select">
-                                                        <optgroup label="This is a group">
-                                                            <option value="12" selected="">This is item 1</option>
-                                                            <option value="13">This is item 2</option>
-                                                            <option value="14">This is item 3</option>
+                                                        <optgroup label="Governor Position">
+                                                            <?php candidates('Governor'); ?>
                                                         </optgroup>
                                                     </select></div><!-- End: Success Example --><label class="form-label"><strong>Vice Governor</strong></label><!-- Start: Success Example -->
                                                 <div class="mb-3"><select class="form-select">
-                                                        <optgroup label="This is a group">
-                                                            <option value="12" selected="">This is item 1</option>
-                                                            <option value="13">This is item 2</option>
-                                                            <option value="14">This is item 3</option>
+                                                        <optgroup label="Vice Governor Position">
+                                                            <?php candidates('Vice Governor'); ?>
                                                         </optgroup>
                                                     </select></div><!-- End: Success Example --><label class="form-label"><strong>Secretary</strong></label><!-- Start: Success Example -->
                                                 <div class="mb-3"><select class="form-select">
-                                                        <optgroup label="This is a group">
-                                                            <option value="12" selected="">This is item 1</option>
-                                                            <option value="13">This is item 2</option>
-                                                            <option value="14">This is item 3</option>
+                                                        <optgroup label="Secretary Position">
+                                                            <?php candidates('Secretary'); ?>
                                                         </optgroup>
                                                     </select></div><!-- End: Success Example --><label class="form-label"><strong>Treasurer</strong></label><!-- Start: Success Example -->
                                                 <div class="mb-3"><select class="form-select">
-                                                        <optgroup label="This is a group">
-                                                            <option value="12" selected="">This is item 1</option>
-                                                            <option value="13">This is item 2</option>
-                                                            <option value="14">This is item 3</option>
+                                                        <optgroup label="Treasurer Position">
+                                                            <?php candidates('Treasurer'); ?>
                                                         </optgroup>
                                                     </select></div><!-- End: Success Example -->
                                             </form>
@@ -124,31 +118,23 @@
                                             <div>
                                                 <form class="p-3 p-xl-4" method="post"><label class="form-label"><strong>Auditor</strong></label><!-- Start: Success Example -->
                                                     <div class="mb-3"><select class="form-select">
-                                                            <optgroup label="This is a group">
-                                                                <option value="12" selected="">This is item 1</option>
-                                                                <option value="13">This is item 2</option>
-                                                                <option value="14">This is item 3</option>
+                                                            <optgroup label="Auditor">
+                                                                <?php candidates('Auditor'); ?>
                                                             </optgroup>
                                                         </select></div><!-- End: Success Example --><label class="form-label"><strong>Board Member</strong></label><!-- Start: Success Example -->
                                                     <div class="mb-3"><select class="form-select">
-                                                            <optgroup label="This is a group">
-                                                                <option value="12" selected="">This is item 1</option>
-                                                                <option value="13">This is item 2</option>
-                                                                <option value="14">This is item 3</option>
+                                                            <optgroup label="Board Member">
+                                                                <?php candidates('Board Member'); ?>
                                                             </optgroup>
                                                         </select></div><!-- End: Success Example --><label class="form-label"><strong>Board Member</strong></label><!-- Start: Success Example -->
                                                     <div class="mb-3"><select class="form-select">
-                                                            <optgroup label="This is a group">
-                                                                <option value="12" selected="">This is item 1</option>
-                                                                <option value="13">This is item 2</option>
-                                                                <option value="14">This is item 3</option>
+                                                            <optgroup label="Board Member">
+                                                                <?php candidates('Board Member'); ?>
                                                             </optgroup>
                                                         </select></div><!-- End: Success Example --><label class="form-label"><strong>Board Member</strong></label><!-- Start: Success Example -->
                                                     <div class="mb-3"><select class="form-select">
-                                                            <optgroup label="This is a group">
-                                                                <option value="12" selected="">This is item 1</option>
-                                                                <option value="13">This is item 2</option>
-                                                                <option value="14">This is item 3</option>
+                                                            <optgroup label="Board Member">
+                                                                <?php candidates('Board Member'); ?>
                                                             </optgroup>
                                                         </select></div><!-- End: Success Example -->
                                                 </form>
@@ -157,17 +143,13 @@
                                         <div class="col">
                                             <form class="p-3 p-xl-4" method="post"><label class="form-label"><strong>Board Member</strong></label><!-- Start: Success Example -->
                                                 <div class="mb-3"><select class="form-select">
-                                                        <optgroup label="This is a group">
-                                                            <option value="12" selected="">This is item 1</option>
-                                                            <option value="13">This is item 2</option>
-                                                            <option value="14">This is item 3</option>
+                                                        <optgroup label="Board Member">
+                                                            <?php candidates('Board Member'); ?>
                                                         </optgroup>
                                                     </select></div><!-- End: Success Example --><label class="form-label"><strong>Board Member</strong></label><!-- Start: Success Example -->
                                                 <div class="mb-3"><select class="form-select">
-                                                        <optgroup label="This is a group">
-                                                            <option value="12" selected="">This is item 1</option>
-                                                            <option value="13">This is item 2</option>
-                                                            <option value="14">This is item 3</option>
+                                                        <optgroup label="Board Member">
+                                                            <?php candidates('Board Member'); ?>
                                                         </optgroup>
                                                     </select></div><!-- End: Success Example -->
                                             </form>
