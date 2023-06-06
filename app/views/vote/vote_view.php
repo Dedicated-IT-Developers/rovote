@@ -49,8 +49,9 @@
                                                             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
                                                         </svg></div>
                                                     <div class="px-2">
-                                                        <h6 class="mb-0">Juan dela Cruz</h6>
-                                                        <p class="mb-0" style="text-align: left;">MCC-2020</p>
+                                                        <h6 class="mb-0"><?php echo $voter['STUDNAM3'] . ' ' . $voter['STUDNAM2'] . ' ' . $voter['STUDNAM1'];
+                                                                            ?></h6>
+                                                        <p class="mb-0" style="text-align: left;"><?php echo $voter['STUDID']; ?></p>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex align-items-center p-3">
@@ -58,8 +59,8 @@
                                                             <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h7v1a1 1 0 0 1-1 1H6zm7-3H6v-2h7v2z"></path>
                                                         </svg></div>
                                                     <div class="px-2">
-                                                        <h6 class="mb-0">BSIT</h6>
-                                                        <p class="mb-0">CCS</p>
+                                                        <h6 class="mb-0"><?php echo course($voter['CORID']); ?></h6>
+                                                        <p class="mb-0" style="text-align: left;"><?php echo college(1); ?></p>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex align-items-center p-3">
@@ -68,8 +69,17 @@
                                                             <path d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"></path>
                                                         </svg></div>
                                                     <div class="px-2">
-                                                        <h6 class="mb-0">Second Year</h6>
-                                                        <p class="mb-0" style="text-align: left;">F5</p>
+                                                        <h6 class="mb-0">YEAR LEVEL</h6>
+                                                        <p class="mb-0" style="text-align: left;"><?php echo year_level($voter['YEARLEVEL']); ?></p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center p-3">
+                                                    <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-earmark-ruled">
+                                                            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h7v1a1 1 0 0 1-1 1H6zm7-3H6v-2h7v2z"></path>
+                                                        </svg></div>
+                                                    <div class="px-2">
+                                                        <h6 class="mb-0">Gender</h6>
+                                                        <p class="mb-0">CCS</p>
                                                     </div>
                                                 </div>
                                             </div>

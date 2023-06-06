@@ -1,2 +1,3 @@
 # Dropdown candidates based on position
 # candidates($position) helper on profile_helper
+# Added debugging dd($data), show($data) helper on common_helper

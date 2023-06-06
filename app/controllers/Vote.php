@@ -12,9 +12,11 @@ class Vote extends Controller
     public function student($STUDID)
     {
         $this->call->model('Candidate_model', 'candidate_model');
+        $this->call->model('Student_model', 'student_model');
 
         $data['candidates'] = $this->candidate_model->candidates();
-        // dd($data['candidates']);
+        $data['voter'] = $this->student_model->students($STUDID);
+
         $this->call->view('vote/vote_view', $data);
     }
 }
