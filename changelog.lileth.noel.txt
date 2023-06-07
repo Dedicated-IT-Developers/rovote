@@ -12,3 +12,6 @@
 # Used voted_candidate($position, $studid) to display voted candidates on vote_view.php
 # Modify Vote_model: add_vote()
 # Added new function on Vote_model: check_voting_status()
+# Added folder uploads/profile to store profile pictures
+# Candidate lists with vote count on home view
+# profile_picture($studid) helper on common_helper | used in vote_view.php
