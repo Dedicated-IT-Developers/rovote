@@ -1,18 +1,24 @@
 <?php
 defined('PREVENT_DIRECT_ACCESS') or exit('No direct script access allowed');
 
-class Student_model extends Model
+class Vote_model extends Model
 {
-    public function add_vote($data)
+    public function check_voting_status($studid)
     {
-        $check = $this->db->table('vote')
+        $voted = $this->db->table('vote')
             ->select('user_id')
-            ->where('user_id', $data['user_id'])
-            ->where('candidate_id', $data['candidate_id'])
+            ->where('user_id', $studid)
             ->get();
 
-        if (!$check) {
-            return $this->db->table('vote')->insert($data);
+        if ($voted) {
+            return true;
+        } else {
+            return false;
         }
+    }
+
+    public function add_vote($data)
+    {
+        return $this->db->table('vote')->insert($data);
     }
 }
