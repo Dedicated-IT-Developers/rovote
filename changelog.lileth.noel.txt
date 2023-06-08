@@ -1,2 +1,17 @@
 # Dropdown candidates based on position
-# candidates($position) helper on profile_helper
+# candidates($position) helper on profile_helper | used in vote_view.php
+# Added debugging dd($data), show($data) helper on common_helper | used for debugging
+# Added voted_candidate($position, $studid) helper on profile_helper | used in vote_view.php
+
+# June 07, 2023
+# Modify database: vote table -> column: studid[int] -> studid[varchar]
+# Reason: studid parameter on saving vote -> vote/ballot/$studid is not an id, it is Student ID (ex : C19-0001)
+# Added candidates for other positions
+# Saving voted candidates per position on session -> vote/save_candidates
+# Saved voted candidates on database -> vote/ballot
+# Used voted_candidate($position, $studid) to display voted candidates on vote_view.php
+# Modify Vote_model: add_vote()
+# Added new function on Vote_model: check_voting_status()
+# Added folder uploads/profile to store profile pictures
+# Candidate lists with vote count on home view
+# profile_picture($studid) helper on common_helper | used in vote_view.php
