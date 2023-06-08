@@ -16,7 +16,7 @@ class Vote extends Controller
         $this->call->model('Student_model', 'student_model');
 
         $data['candidates'] = $this->candidate_model->candidates();
-        $data['voter'] = $this->student_model->students($STUDID);
+        $data['voter'] = $this->student_model->student_info($STUDID);
 
         $this->call->view('vote/vote_view', $data);
     }
