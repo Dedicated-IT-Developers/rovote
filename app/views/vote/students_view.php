@@ -83,7 +83,12 @@
 														<span class="badge bg-warning">Not Voted</span>
 													<?php } ?>
 												</td>
-												<td class="cell"><a class="btn-sm app-btn-secondary" target="_blank" rel="noopener noreferrer" onclick="window.open('<?php echo BASE_URL; ?>vote/student/<?php echo $student['STUDID']; ?>', 'newwindow', 'width=auto,height=auto'); return false;" href="#">Vote</a></td>
+												<td class="cell">
+													<!-- only not voted has a button vote -->
+													<?php if (voting_status($student['STUDID']) != 'Voted') { ?>
+														<a class="btn-sm app-btn-secondary" target="_blank" rel="noopener noreferrer" onclick="window.open('<?php echo BASE_URL; ?>vote/student/<?php echo $student['STUDID']; ?>', 'newwindow', 'width=auto,height=auto'); return false;" href="#">Vote</a>
+													<?php } ?>
+												</td>
 											</tr>
 										<?php } ?>
 
@@ -149,7 +154,12 @@
 															<span class="badge bg-warning">Not Voted</span>
 														<?php } ?>
 													</td>
-													<td class="cell"><a class="btn-sm app-btn-secondary" target="_blank" rel="noopener noreferrer" onclick="window.open('<?php echo BASE_URL; ?>vote/student/<?php echo $student['STUDID']; ?>', 'newwindow', 'width=auto,height=auto'); return false;" href="#">Vote</a></td>
+													<td class="cell">
+														<!-- only not voted has a button vote -->
+														<?php if (voting_status($student['STUDID']) != 'Voted') { ?>
+															<a class="btn-sm app-btn-secondary" target="_blank" rel="noopener noreferrer" onclick="window.open('<?php echo BASE_URL; ?>vote/student/<?php echo $student['STUDID']; ?>', 'newwindow', 'width=auto,height=auto'); return false;" href="#">Vote</a>
+														<?php } ?>
+													</td>
 												</tr>
 											<?php } ?>
 										<?php } ?>

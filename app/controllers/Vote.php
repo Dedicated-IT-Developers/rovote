@@ -16,7 +16,7 @@ class Vote extends Controller
         $this->call->model('Student_model', 'student_model');
 
         $data['candidates'] = $this->candidate_model->candidates();
-        $data['voter'] = $this->student_model->students($STUDID);
+        $data['voter'] = $this->student_model->student_info($STUDID);
 
         $this->call->view('vote/vote_view', $data);
     }
@@ -46,7 +46,12 @@ class Vote extends Controller
             unset($_SESSION['candidates_voted_by_' . $studid]);
             $this->session->set_flashdata(['alert' => 'success', 'message' => 'Thank you for voting! Your vote matters.']);
         }
-        redirect('dashboard/vote');
+        // redirect('dashboard/vote');
+        // wag i redirect dun sa List, magdisplay ng message na mag design or image
+        // idisable yung back button ni browser (https://www.cluemediator.com/how-to-disable-the-browser-back-button-using-javascript)
+        // use spinner / preloader when button submit submitted, para maiwasan ma double click pag vote
+        echo '
+        <h1>Yey! Congratz.</h1>';
     }
 
     public function save_candidates()

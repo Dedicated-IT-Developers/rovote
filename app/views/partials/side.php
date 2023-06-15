@@ -32,8 +32,8 @@
 		                         <span class="nav-link-text">Organizations</span>
 					        </a><!--//nav-link-->
 					    </li><!--//nav-item-->
-					    <li class="nav-item">
-					        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+					    
+						<!-- <li class="nav-item">
 					        <a class="nav-link" href="<?php echo BASE_URL; ?>dashboard/filing">
 						        <span class="nav-icon">
                                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-card-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -45,8 +45,8 @@
                                     </svg>
 						         </span>
 		                         <span class="nav-link-text">Filing</span>
-					        </a><!--//nav-link-->
-					    </li><!--//nav-item-->
+					        </a>
+					    </li> -->
 
 
                         <li class="nav-item">
@@ -87,8 +87,8 @@
 		                         <span class="nav-link-text">Results</span>
 					        </a><!--//nav-link-->
 					    </li><!--//nav-item-->
-					    <li class="nav-item">
-					        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+
+					    <!-- <li class="nav-item">
 					        <a class="nav-link" href="<?php echo BASE_URL; ?>dashboard/">
 						        <span class="nav-icon">
 						        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -97,8 +97,11 @@
                                 </svg>
 						         </span>
 		                         <span class="nav-link-text">Help</span>
-					        </a><!--//nav-link-->
-					    </li><!--//nav-item-->
+					        </a>
+
+					    </li> -->
+
+
 				    </ul><!--//app-menu-->
 			    </nav><!--//app-nav-->
 
