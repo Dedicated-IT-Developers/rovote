@@ -1,0 +1,35 @@
+Admin:
+
+    http://localhost/rovote/auth/login
+
+    email: only.master.red@gmail.com
+    password: rovotestaff
+
+
+
+Reminders:
+
+1. use io library (io->post())
+2. form validation
+3. use html_escape() in views
+4. controller method's ajax security
+    if (!$this->io->is_ajax()) exit('Forbidden access.');
+5. 
+
+
+Todos:
+
+    Priorities:
+    - Vote page design (especially- Review & Submit Tab, vote, redirect destination)
+    - Realtime Updates in Home(Landing page display)
+    - Results (in Admin)
+    - Profile (change password)
+    - Create/Add new user(admin)
+    - Create/Add new Student
+
+    Future:
+    - Settings (Active Semester, Active Academic Year)
+    - Use settings Sem & AY in all transaction (dynamic) , ex; Add Candidates (select active Sem and AY and use as value in Sem & AY column in Candidates table)
+    - Add Organizations
+    - Populate College, Program, and Org in Add Candidate Dropdowns
+
